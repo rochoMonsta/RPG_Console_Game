@@ -1,13 +1,20 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace GamePrototype
 {
-    class CharacterClass
+    [DataContract]
+    public class CharacterClass
     {
+        [DataMember]
         public int Power { get; set; }
+        [DataMember]
         public int Endurance { get; set; }
+        [DataMember]
         public int Intelligence { get; set; }
+        [DataMember]
         public int Agility { get; set; }
+        [DataMember]
         public int Stealth { get; set; }
         public CharacterClass() { }
         public CharacterClass(int Power, int Endurance, int Intelligence, int Agility, int Stealth)

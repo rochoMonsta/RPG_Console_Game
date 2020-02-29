@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace GamePrototype
 {
-    class CharacterLevel
+    [DataContract]
+    public class CharacterLevel
     {
+        [DataMember]
         private int CHARACTER_LEVEL = 0;
+        [DataMember]
         private const int UP_LEVEL_BOUNDARY = 100;
+        [DataMember]
         private int CHARACTER_LEVEL_POINTS = 0;
+        [DataMember]
         private int CHARACTER_EXPERIENCE_POINTS = 15;
         public int GET_EXPERIENCE_POINT
         {

@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace GamePrototype
 {
-    class Warrior : CharacterClass
+    [DataContract]
+    public class Warrior : CharacterClass
     {
         public Warrior() { }
         public Warrior(int Power, int Endurance, int Intelligence, int Agility, int Stealth) : base(Power, Endurance, Intelligence, Agility, Stealth)

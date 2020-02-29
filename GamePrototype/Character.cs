@@ -1,13 +1,20 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace GamePrototype
 {
+    [DataContract]
     class Character
     {
+        [DataMember]
         private string Name;
+        [DataMember]
         private string Sex;
+        [DataMember]
         private string Nationality;
+        [DataMember]
         public CharacterLevel CharacterLevel = new CharacterLevel();
+        [DataMember]
         public CharacterClass CharacterClass;
         public Character() { }
         public Character(string Sex, string Name, string Nationality, CharacterClass character)
