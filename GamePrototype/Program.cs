@@ -9,6 +9,10 @@ namespace GamePrototype
             //Version 0.0.01
             //Date: 29.02.2020
             //Create character and CHARACTERISTICS_update
+
+            //Tasks for next update:
+            //create world
+
             Character character = new Character();
             CreateNewCharacher createNew = new CreateNewCharacher(character);
 
