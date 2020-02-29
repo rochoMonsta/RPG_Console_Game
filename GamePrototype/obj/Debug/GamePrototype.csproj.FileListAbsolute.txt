@@ -4,3 +4,9 @@ C:\Users\rocho\Desktop\GamePrototype\bin\Debug\GamePrototype.pdb
 C:\Users\rocho\Desktop\GamePrototype\obj\Debug\GamePrototype.csprojAssemblyReference.cache
 C:\Users\rocho\Desktop\GamePrototype\obj\Debug\GamePrototype.exe
 C:\Users\rocho\Desktop\GamePrototype\obj\Debug\GamePrototype.pdb
+G:\All\GitHub\RPG_Console_Game\GamePrototype\bin\Debug\GamePrototype.exe.config
+G:\All\GitHub\RPG_Console_Game\GamePrototype\bin\Debug\GamePrototype.exe
+G:\All\GitHub\RPG_Console_Game\GamePrototype\bin\Debug\GamePrototype.pdb
+G:\All\GitHub\RPG_Console_Game\GamePrototype\obj\Debug\GamePrototype.csprojAssemblyReference.cache
+G:\All\GitHub\RPG_Console_Game\GamePrototype\obj\Debug\GamePrototype.exe
+G:\All\GitHub\RPG_Console_Game\GamePrototype\obj\Debug\GamePrototype.pdb

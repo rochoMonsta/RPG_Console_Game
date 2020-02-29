@@ -58,7 +58,7 @@ namespace GamePrototype
                     Console.Write("Enter points to improve your level of performance: ");
                     skill_points = Convert.ToInt32(Console.ReadLine());
                 }
-                character.CharacterLevel.GET_EXPERIENCE_POINT = character.CharacterLevel.GET_EXPERIENCE_POINT - skill_points;
+                character.CharacterLevel.GET_EXPERIENCE_POINT -= skill_points;
             }
             return skill_points;
         }
