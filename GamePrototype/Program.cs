@@ -6,6 +6,9 @@ namespace GamePrototype
     {
         static void Main(string[] args)
         {
+            //Version 0.0.01
+            //Date: 29.02.2020
+            //Create character and CHARACTERISTICS_update
             Character character = new Character();
             CreateNewCharacher createNew = new CreateNewCharacher(character);
 
