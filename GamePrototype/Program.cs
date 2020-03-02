@@ -13,6 +13,7 @@ namespace GamePrototype
 
             //Tasks for next update:
             //create world
+            //correct save(CharacterClass)
             Character character = new Character();
             if (File.Exists("Character.json"))
             {
