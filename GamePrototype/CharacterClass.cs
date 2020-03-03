@@ -45,5 +45,9 @@ namespace GamePrototype
                 this.Stealth = Stealth;
         }
         public virtual void Ability() { }
+        public override string ToString()
+        {
+            return $"Power: {Power}\nEndurance: {Endurance}\nIntelligence: {Intelligence}\nAgility: {Agility}\nStealth: {Stealth}";
+        }
     }
 }

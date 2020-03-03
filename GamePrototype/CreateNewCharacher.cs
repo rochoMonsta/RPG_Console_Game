@@ -49,12 +49,12 @@ namespace GamePrototype
         }
         public void SelectCharacterNationality(Character character)
         {
-            Console.WriteLine("Elf | Gnome | Druid | Orc");
+            Console.WriteLine("Elf | Gnome | Druid | Orc | Human");
             Console.Write("Enter your nationality: ");
             string nationality = Console.ReadLine();
-            while ((nationality != "Elf") && (nationality != "Gnome") && (nationality != "Druid") && (nationality != "Orc"))
+            while ((nationality != "Elf") && (nationality != "Gnome") && (nationality != "Druid") && (nationality != "Orc") && (nationality != "Human"))
             {
-                Console.WriteLine("Elf | Gnome | Druid | Orc");
+                Console.WriteLine("Elf | Gnome | Druid | Orc | Human");
                 Console.Write("Enter your nationality: ");
                 nationality = Console.ReadLine();
             }

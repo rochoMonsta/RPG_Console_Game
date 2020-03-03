@@ -4,6 +4,9 @@ using System.Runtime.Serialization;
 namespace GamePrototype
 {
     [DataContract]
+    [KnownType(typeof(Mage))]
+    [KnownType(typeof(Bowman))]
+    [KnownType(typeof(Warrior))]
     class Character
     {
         [DataMember]
