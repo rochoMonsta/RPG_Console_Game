@@ -7,7 +7,7 @@ namespace GamePrototype
     [KnownType(typeof(Mage))]
     [KnownType(typeof(Bowman))]
     [KnownType(typeof(Warrior))]
-    class Character
+    public class Character
     {
         [DataMember]
         private string Name;

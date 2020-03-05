@@ -50,6 +50,7 @@
     <Compile Include="CharacterClass.cs" />
     <Compile Include="CharacterLevel.cs" />
     <Compile Include="CreateNewCharacher.cs" />
+    <Compile Include="Enemy.cs" />
     <Compile Include="GameSaverLoader.cs" />
     <Compile Include="Mage.cs" />
     <Compile Include="Program.cs" />

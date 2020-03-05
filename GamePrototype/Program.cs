@@ -21,6 +21,7 @@ namespace GamePrototype
                 character = gameSaverLoader.LOAD_GAME_SAVES();
                 Console.WriteLine($"{character.Name_GS} {character.Sex_GS} {character.Nationality_GS}");
                 Console.WriteLine(character.CharacterClass);
+                character.CharacterClass.Ability();
             }
             else
             {
