@@ -51,7 +51,9 @@
     <Compile Include="CharacterLevel.cs" />
     <Compile Include="CreateNewCharacher.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="FireElementalEN.cs" />
     <Compile Include="GameSaverLoader.cs" />
+    <Compile Include="Health.cs" />
     <Compile Include="Mage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

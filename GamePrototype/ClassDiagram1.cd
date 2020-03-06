@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GamePrototype.Bowman">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bowman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.Character" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAEAABAAEEAAAAASABAAAAAAAAAAAAAAAiAg=</HashCode>
+      <FileName>Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.CharacterCharacteristics" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQIAAAAAAQAAAAAAAAQAAAAA=</HashCode>
+      <FileName>CharacterCharacteristics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.CharacterClass" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAFCAAAAAAAAAAAAAABAAABAAAAACA=</HashCode>
+      <FileName>CharacterClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.CharacterLevel" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAIAKAAAAAAAEAAAAAAAAIAAAAAAAAEAAIA=</HashCode>
+      <FileName>CharacterLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.CreateNewCharacher" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEgCEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreateNewCharacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.Enemy" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAACAEgAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.FireElementalEN" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FireElementalEN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.GameSaverLoader" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameSaverLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.Health" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Health.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.Mage">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.Program" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePrototype.Warrior">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Warrior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

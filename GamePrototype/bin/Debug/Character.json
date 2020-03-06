@@ -1,1 +1,1 @@
-{"CharacterClass":{"__type":"Mage:#GamePrototype","Agility":3,"Endurance":1,"Intelligence":5,"Power":5,"Stealth":1},"CharacterLevel":{"CHARACTER_EXPERIENCE_POINTS":0,"CHARACTER_LEVEL":0,"CHARACTER_LEVEL_POINTS":0},"Name":"Triss Merigold","Nationality":"Human","Sex":"Female"}
+{"CharacterClass":{"__type":"Mage:#GamePrototype","Agility":0,"Endurance":2,"Intelligence":3,"Power":10,"Stealth":0},"CharacterLevel":{"CHARACTER_EXPERIENCE_POINTS":0,"CHARACTER_LEVEL":0,"CHARACTER_LEVEL_POINTS":0},"Name":"Triss Merigold","Nationality":"Human","Sex":"Female","health":{"Health_GS":100}}

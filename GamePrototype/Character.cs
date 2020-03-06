@@ -19,6 +19,8 @@ namespace GamePrototype
         public CharacterLevel CharacterLevel = new CharacterLevel();
         [DataMember]
         public CharacterClass CharacterClass;
+        [DataMember]
+        public Health health = new Health();
         public Character() { }
         public Character(string Sex, string Name, string Nationality, CharacterClass character)
         {
