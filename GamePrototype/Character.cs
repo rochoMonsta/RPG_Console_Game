@@ -20,7 +20,7 @@ namespace GamePrototype
         [DataMember]
         public CharacterClass CharacterClass;
         [DataMember]
-        public Health health = new Health();
+        public Health Health = new Health();
         public Character() { }
         public Character(string Sex, string Name, string Nationality, CharacterClass character)
         {
@@ -67,6 +67,17 @@ namespace GamePrototype
             Console.WriteLine($"{this.Name} Intelligence: " + this.CharacterClass.Intelligence);
             Console.WriteLine($"{this.Name} Agility: " + this.CharacterClass.Agility);
             Console.WriteLine($"{this.Name} Stealth: " + this.CharacterClass.Stealth);
+            Console.WriteLine($"{this.Name} Health:" + this.Health.Health_GS);
+        }
+        public virtual void Attack(Enemy enemy)
+        {
+            CharacterClass.Ability();
+            Random random = new Random(DateTime.Now.Millisecond);
+            if ((enemy.Luck * 10) >= random.Next(1, 101))
+                Console.WriteLine($"{Name}: MISS ATACK");
+            else
+                enemy.Health.HealthMinuses(enemy, CharacterClass.Power * 10);
+
         }
     }
 }

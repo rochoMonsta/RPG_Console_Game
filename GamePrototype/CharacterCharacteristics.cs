@@ -27,16 +27,17 @@ namespace GamePrototype
                 case "Intelligence": character.CharacterClass.Intelligence += skillPoint; break;
                 case "Agility": character.CharacterClass.Agility += skillPoint; break;
                 case "Stealth": character.CharacterClass.Stealth += skillPoint; break;
+                case "Luck": character.CharacterClass.Luck += skillPoint; break;
             }
         }
         private string CHOOSE_THE_CHARACTERISTICS()
         {
-            Console.WriteLine("Power | Endurance | Intelligence | Agility | Stealth");
+            Console.WriteLine("Power | Endurance | Intelligence | Agility | Stealth | Luck");
             Console.Write("Select a characteristic: ");
             string cha = Console.ReadLine();
-            while((cha != "Power") && (cha != "Endurance") && (cha != "Intelligence") && (cha != "Agility") && (cha != "Stealth"))
+            while((cha != "Power") && (cha != "Endurance") && (cha != "Intelligence") && (cha != "Agility") && (cha != "Stealth") && (cha != "Luck"))
             {
-                Console.WriteLine("Power | Endurance | Intelligence | Agility | Stealth");
+                Console.WriteLine("Power | Endurance | Intelligence | Agility | Stealth | Luck");
                 Console.Write("Select a characteristic: ");
                 cha = Console.ReadLine();
             }

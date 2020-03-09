@@ -16,6 +16,8 @@ namespace GamePrototype
         public int Agility { get; set; }
         [DataMember]
         public int Stealth { get; set; }
+        [DataMember]
+        public int Luck { get; set; }
         public CharacterClass() { }
         public CharacterClass(int Power, int Endurance, int Intelligence, int Agility, int Stealth)
         {

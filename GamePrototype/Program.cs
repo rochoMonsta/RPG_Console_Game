@@ -5,6 +5,7 @@ namespace GamePrototype
 {
     class Program
     {
+        public static bool GameStatus = true;
         static void Main(string[] args)
         {
             //Version 0.0.01
@@ -14,14 +15,23 @@ namespace GamePrototype
             //Tasks for next update:
             //create world
             //correct save(CharacterClass)
+
+            //TEST FIELD
             Character character = new Character();
             if (File.Exists("Character.json"))
             {
                 var gameSaverLoader = new GameSaverLoader();
                 character = gameSaverLoader.LOAD_GAME_SAVES();
-                Console.WriteLine($"{character.Name_GS} {character.Sex_GS} {character.Nationality_GS} {character.health.Health_GS}");
+                Console.WriteLine($"{character.Name_GS} {character.Sex_GS} {character.Nationality_GS} {character.Health.Health_GS}");
                 Console.WriteLine(character.CharacterClass);
                 character.CharacterClass.Ability();
+
+                character.GET_CHARACTER_CHARACTERISTICS();
+                Fight fight = new Fight();
+                OrkEN orkEN = new OrkEN(character);
+                Console.WriteLine(orkEN + "\n");
+                fight.Fight_HeroVSEnemy(character, orkEN);
+                character.GET_CHARACTER_CHARACTERISTICS();
             }
             else
             {
@@ -35,6 +45,13 @@ namespace GamePrototype
 
                 var gameSaverLoader = new GameSaverLoader();
                 gameSaverLoader.SAVE_GAME(character);
+
+                character.GET_CHARACTER_CHARACTERISTICS();
+                Fight fight = new Fight();
+                OrkEN orkEN = new OrkEN(character);
+                Console.WriteLine(orkEN + "\n");
+                fight.Fight_HeroVSEnemy(character, orkEN);
+                character.GET_CHARACTER_CHARACTERISTICS();
             }
             Console.ReadLine();
         }
