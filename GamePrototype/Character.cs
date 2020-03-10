@@ -62,21 +62,28 @@ namespace GamePrototype
         }
         public void GET_CHARACTER_CHARACTERISTICS()
         {
-            Console.WriteLine($"{this.Name} Power: " + this.CharacterClass.Power);
-            Console.WriteLine($"{this.Name} Endurance: " + this.CharacterClass.Endurance);
-            Console.WriteLine($"{this.Name} Intelligence: " + this.CharacterClass.Intelligence);
-            Console.WriteLine($"{this.Name} Agility: " + this.CharacterClass.Agility);
-            Console.WriteLine($"{this.Name} Stealth: " + this.CharacterClass.Stealth);
-            Console.WriteLine($"{this.Name} Health:" + this.Health.Health_GS);
+            Console.WriteLine($"\n\t{this.Name} Power: " + this.CharacterClass.Power);
+            Console.WriteLine($"\t{this.Name} Endurance: " + this.CharacterClass.Endurance);
+            Console.WriteLine($"\t{this.Name} Intelligence: " + this.CharacterClass.Intelligence);
+            Console.WriteLine($"\t{this.Name} Agility: " + this.CharacterClass.Agility);
+            Console.WriteLine($"\t{this.Name} Stealth: " + this.CharacterClass.Stealth);
+            Console.WriteLine($"\t{this.Name} Luck: " + this.CharacterClass.Luck);
+            Console.WriteLine($"\t{this.Name} Health: " + this.Health.Health_GS + "\n");
         }
         public virtual void Attack(Enemy enemy)
         {
-            CharacterClass.Ability();
             Random random = new Random(DateTime.Now.Millisecond);
+            var abil = CharacterClass.Abilities.GetRandomAbilitie();
+            Console.WriteLine(abil.Abilitie_Name + " - " + (abil.Damage + CharacterClass.Power));
             if ((enemy.Luck * 10) >= random.Next(1, 101))
-                Console.WriteLine($"{Name}: MISS ATACK");
+                Console.WriteLine($"\t{Name}: MISS ATACK\n");
             else
-                enemy.Health.HealthMinuses(enemy, CharacterClass.Power * 10);
+            {
+                Console.WriteLine($"\t{Name}: ATACK {enemy.Name}");
+                enemy.Health.HealthMinuses(enemy, CharacterClass.Power + abil.Damage);
+                Console.WriteLine($"\t{Name} HP: {Health.Health_GS}    {enemy.Name} HP: {enemy.Health.Health_GS}\n");
+            }
+                
 
         }
     }

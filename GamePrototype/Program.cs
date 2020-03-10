@@ -24,7 +24,7 @@ namespace GamePrototype
                 character = gameSaverLoader.LOAD_GAME_SAVES();
                 Console.WriteLine($"{character.Name_GS} {character.Sex_GS} {character.Nationality_GS} {character.Health.Health_GS}");
                 Console.WriteLine(character.CharacterClass);
-                character.CharacterClass.Ability();
+                character.CharacterClass.Abilities.GetAbilitiesList();
 
                 character.GET_CHARACTER_CHARACTERISTICS();
                 Fight fight = new Fight();
@@ -38,13 +38,14 @@ namespace GamePrototype
                 CreateNewCharacher createNew = new CreateNewCharacher(character);
                 Console.Clear();
                 Console.WriteLine(character);
-                character.CharacterClass.Ability();
 
                 CharacterCharacteristics characterCharacteristics = new CharacterCharacteristics(character);
                 character.GET_CHARACTER_CHARACTERISTICS();
 
                 var gameSaverLoader = new GameSaverLoader();
                 gameSaverLoader.SAVE_GAME(character);
+
+                character.CharacterClass.Abilities.GetAbilitiesList();
 
                 character.GET_CHARACTER_CHARACTERISTICS();
                 Fight fight = new Fight();

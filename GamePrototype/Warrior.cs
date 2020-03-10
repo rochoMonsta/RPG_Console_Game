@@ -11,9 +11,5 @@ namespace GamePrototype
         {
 
         }
-        public override void Ability()
-        {
-            Console.WriteLine("Tearing blow");
-        }
     }
 }

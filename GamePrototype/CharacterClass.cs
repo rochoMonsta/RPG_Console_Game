@@ -18,6 +18,8 @@ namespace GamePrototype
         public int Stealth { get; set; }
         [DataMember]
         public int Luck { get; set; }
+        [DataMember]
+        public Abilities Abilities = new Abilities();
         public CharacterClass() { }
         public CharacterClass(int Power, int Endurance, int Intelligence, int Agility, int Stealth)
         {
@@ -46,7 +48,6 @@ namespace GamePrototype
             else
                 this.Stealth = Stealth;
         }
-        public virtual void Ability() { }
         public override string ToString()
         {
             return $"Power: {Power}\nEndurance: {Endurance}\nIntelligence: {Intelligence}\nAgility: {Agility}\nStealth: {Stealth}";

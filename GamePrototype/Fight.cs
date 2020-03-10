@@ -10,7 +10,11 @@ namespace GamePrototype
             while (character.Health.Health_GS >= 0 && enemy.Health.Health_GS >= 0)
             {
                 character.Attack(enemy);
+                if (enemy.Health.Health_GS <= 0)
+                    break;
                 enemy.Attack(character);
+                if (character.Health.Health_GS <= 0)
+                    break;
             }
             if (character.Health.Health_GS <= 0)
                 Console.WriteLine($"{character.Name_GS}: DIE;");

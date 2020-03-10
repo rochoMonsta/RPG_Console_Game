@@ -17,12 +17,16 @@ namespace GamePrototype
         }
         public override void Attack(Character character)
         {
-            Console.WriteLine("Blow with an ax.");
+            Console.WriteLine("Blow with an ax - " + Atack_Power);
             Random random = new Random(DateTime.Now.Millisecond);
             if ((character.CharacterClass.Luck * 10) >= random.Next(1, 101))
-                Console.WriteLine("Ork robber: MISS ATACK");
+                Console.WriteLine($"\t{Name}: MISS ATACK\n");
             else
+            {
+                Console.WriteLine($"\t{Name}: ATACK {character.Name_GS}");
                 character.Health.HealthMinuses(character, this.Atack_Power);
+                Console.WriteLine($"\t{Name} HP: {Health.Health_GS}    {character.Name_GS} HP: {character.Health.Health_GS}\n");
+            }
         }
     }
 }
