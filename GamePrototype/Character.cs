@@ -68,7 +68,8 @@ namespace GamePrototype
             Console.WriteLine($"\t{this.Name} Agility: " + this.CharacterClass.Agility);
             Console.WriteLine($"\t{this.Name} Stealth: " + this.CharacterClass.Stealth);
             Console.WriteLine($"\t{this.Name} Luck: " + this.CharacterClass.Luck);
-            Console.WriteLine($"\t{this.Name} Health: " + this.Health.Health_GS + "\n");
+            Console.WriteLine($"\t{this.Name} Health: " + this.Health.Health_GS);
+            Console.WriteLine($"\t{CharacterLevel}\n");
         }
         public virtual void Attack(Enemy enemy)
         {

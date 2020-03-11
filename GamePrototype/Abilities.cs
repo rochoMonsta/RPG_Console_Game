@@ -7,7 +7,6 @@ namespace GamePrototype
     [DataContract]
     public class Abilities
     {
-        //public Abilities RandomAbilitie { get; }
         [DataMember]
         public int Damage { get; set; }
         [DataMember]

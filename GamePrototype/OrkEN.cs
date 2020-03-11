@@ -10,10 +10,14 @@ namespace GamePrototype
             Random random = new Random(DateTime.Now.Millisecond);
             Name = "Orc robber";
             Atack_Power = 25 + (character.CharacterLevel.CHARACTER_LEVEL_GS * 20);
-            Level = character.CharacterLevel.CHARACTER_LEVEL_GS + random.Next(0, 4);
-            Health.Health_GS = 50 + character.Health.Health_GS;
+            Level = character.CharacterLevel.CHARACTER_LEVEL_GS + random.Next(1, 4);
+            EXP_BY_KILLING = (Level * 10) + 25;
+            Health.Health_GS = 25 + character.Health.Health_GS;
             Anymation = @"\C:OrkRobber.animanion";
-            Luck = character.CharacterClass.Luck - 1;
+            if (character.CharacterClass.Luck >= 2)
+                Luck = character.CharacterClass.Luck - 2;
+            else
+                Luck = 1;
         }
         public override void Attack(Character character)
         {

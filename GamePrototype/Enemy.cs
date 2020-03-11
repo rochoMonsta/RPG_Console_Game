@@ -4,6 +4,7 @@ namespace GamePrototype
 {
     public class Enemy
     {
+        public int EXP_BY_KILLING { get; set; }
         public string Anymation { get; set; }
         public int Atack_Power { get; set; }
         public string Name { get; set; }

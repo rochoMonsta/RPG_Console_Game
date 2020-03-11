@@ -11,8 +11,13 @@ namespace GamePrototype
             Name = "Fire Elemental";
             Atack_Power = 100 + (character.CharacterLevel.CHARACTER_LEVEL_GS * 20);
             Level = character.CharacterLevel.CHARACTER_LEVEL_GS + random.Next(0, 4);
+            EXP_BY_KILLING = (Level * 20) + 50;
             Health.Health_GS = 100 + character.Health.Health_GS;
             Anymation = @"\C:FireElemental.animanion";
+            if (character.CharacterClass.Luck >= 1)
+                Luck = character.CharacterClass.Luck - 1;
+            else
+                Luck = 1;
         }
         public override void Attack(Character character)
         {
