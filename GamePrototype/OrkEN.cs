@@ -12,7 +12,7 @@ namespace GamePrototype
             Atack_Power = 25 + (character.CharacterLevel.CHARACTER_LEVEL_GS * 20);
             Level = character.CharacterLevel.CHARACTER_LEVEL_GS + random.Next(1, 4);
             EXP_BY_KILLING = (Level * 10) + 25;
-            Health.Health_GS = 25 + character.Health.Health_GS;
+            Health.Health_GS = 50 + character.Health.Health_GS;
             Anymation = @"\C:OrkRobber.animanion";
             if (character.CharacterClass.Luck >= 2)
                 Luck = character.CharacterClass.Luck - 2;
