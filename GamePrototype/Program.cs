@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GamePrototype.Enemys;
+using System;
 using System.IO;
 
 namespace GamePrototype
@@ -32,6 +33,10 @@ namespace GamePrototype
                 Console.WriteLine(orkEN + "\n");
                 fight.Fight_HeroVSEnemy(character, orkEN);
                 character.GET_CHARACTER_CHARACTERISTICS();
+                Console.WriteLine("HHH" + character.Health.CharacterHealthUpBoundary_GS);
+                character.SetUpACamp();
+                character.GET_CHARACTER_CHARACTERISTICS();
+                //gameSaverLoader.SAVE_GAME(character);
             }
             else
             {
@@ -52,7 +57,10 @@ namespace GamePrototype
                 OrkEN orkEN = new OrkEN(character);
                 Console.WriteLine(orkEN + "\n");
                 fight.Fight_HeroVSEnemy(character, orkEN);
+                character.SetUpACamp();
                 character.GET_CHARACTER_CHARACTERISTICS();
+                //Console.WriteLine("HHH" + character.Health.CharacterHealthUpBoundary_GS);
+                //gameSaverLoader.SAVE_GAME(character);
             }
             Console.ReadLine();
         }

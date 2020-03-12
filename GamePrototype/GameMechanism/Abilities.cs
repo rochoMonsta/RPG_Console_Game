@@ -28,6 +28,11 @@ namespace GamePrototype
             Random random = new Random(DateTime.Now.Millisecond);
             return Abilities_List[random.Next(Abilities_List.Count)];
         }
+        public void UpAbilitiesLevel()
+        {
+            foreach (var element in Abilities_List)
+                element.Damage += 5;
+        }
         public override string ToString()
         {
             return $"{Abilitie_Name} - {Damage}";

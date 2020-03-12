@@ -1,19 +1,19 @@
 ﻿using System;
 
-namespace GamePrototype
+namespace GamePrototype.Enemys
 {
-    public class OrkEN : Enemy
+    class MurlocEN : Enemy
     {
-        public OrkEN() { }
-        public OrkEN(Character character)
+        public MurlocEN() { }
+        public MurlocEN(Character character)
         {
             Random random = new Random(DateTime.Now.Millisecond);
-            Name = "Orc robber";
-            Atack_Power = 25 + (character.CharacterLevel.CHARACTER_LEVEL_GS * 20);
+            Name = "Murloc scout";
+            Atack_Power = 10 + (character.CharacterLevel.CHARACTER_LEVEL_GS * 20);
             Level = character.CharacterLevel.CHARACTER_LEVEL_GS + random.Next(1, 4);
-            EXP_BY_KILLING = (Level * 10) + 25;
-            Health.Health_GS = 50 + character.Health.Health_GS;
-            Anymation = @"\C:OrkRobber.animanion";
+            EXP_BY_KILLING = (Level * 10) + 10;
+            Health.Health_GS = 10 + character.Health.Health_GS;
+            Anymation = @"\C:MurlocScout.animanion";
             if (character.CharacterClass.Luck >= 2)
                 Luck = character.CharacterClass.Luck - 2;
             else
@@ -21,7 +21,7 @@ namespace GamePrototype
         }
         public override void Attack(Character character)
         {
-            Console.WriteLine("Blow with an ax - " + Atack_Power);
+            Console.WriteLine("Fin kick - " + Atack_Power);
             Random random = new Random(DateTime.Now.Millisecond);
             if ((character.CharacterClass.Luck * 10) >= random.Next(1, 101))
                 Console.WriteLine($"\t{Name}: MISS ATACK\n");

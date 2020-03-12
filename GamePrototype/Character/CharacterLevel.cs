@@ -19,7 +19,7 @@ namespace GamePrototype
             get { return CHARACTER_EXPERIENCE_POINTS; }
             set { CHARACTER_EXPERIENCE_POINTS = value; }
         }
-        public int ADD_EXPERIENCE_POINT()
+        public int ADD_EXPERIENCE_POINT(Character character)
         {
             if (CHARACTER_LEVEL_POINTS_GS >= UP_LEVEL_BOUNDARY)
             {
@@ -27,6 +27,8 @@ namespace GamePrototype
                 CHARACTER_LEVEL_GS++;
                 CHARACTER_EXPERIENCE_POINTS += CHARACTER_LEVEL_POINTS_GS / UP_LEVEL_BOUNDARY;
                 CHARACTER_LEVEL_POINTS_GS = CHARACTER_LEVEL_POINTS_GS % UP_LEVEL_BOUNDARY;
+                character.CharacterClass.Abilities.UpAbilitiesLevel();
+                character.Health.HealthUp(character);
                 return CHARACTER_EXPERIENCE_POINTS;
             }
             else

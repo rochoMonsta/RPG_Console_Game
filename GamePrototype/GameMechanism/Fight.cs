@@ -21,7 +21,7 @@ namespace GamePrototype
             else
             {
                 character.CharacterLevel.CHARACTER_LEVEL_POINTS_GS += enemy.EXP_BY_KILLING;
-                character.CharacterLevel.ADD_EXPERIENCE_POINT();
+                character.CharacterLevel.ADD_EXPERIENCE_POINT(character);
             }
             if (enemy.Health.Health_GS <= 0)
                 Console.WriteLine($"{enemy.Name}: DIE;");

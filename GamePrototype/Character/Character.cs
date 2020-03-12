@@ -84,8 +84,11 @@ namespace GamePrototype
                 enemy.Health.HealthMinuses(enemy, CharacterClass.Power + abil.Damage);
                 Console.WriteLine($"\t{Name} HP: {Health.Health_GS}    {enemy.Name} HP: {enemy.Health.Health_GS}\n");
             }
-                
-
+        }
+        public void SetUpACamp()
+        {
+            Console.WriteLine($"\n{Name} set up a camp to wait");
+            Console.WriteLine($"\t{Name} HP {Health.Health_GS} -> {Health.Health_GS = Health.CharacterHealthUpBoundary_GS}");
         }
     }
 }

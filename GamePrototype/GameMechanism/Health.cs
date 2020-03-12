@@ -4,10 +4,16 @@ namespace GamePrototype
 {
     public class Health
     {
+        private int CharacterHealthUpBoundary = 100;
+        public int CharacterHealthUpBoundary_GS
+        {
+            get { return CharacterHealthUpBoundary; }
+            set { CharacterHealthUpBoundary = value; }
+        }
         public int Health_GS { get; set; } = 100;
         public void HealthUp(Character character)
         {
-            character.Health.Health_GS += (character.CharacterLevel.CHARACTER_LEVEL_GS * 50);
+            character.Health.CharacterHealthUpBoundary_GS += 50;
         }
         public void HealthUp(Enemy enemy)
         {
