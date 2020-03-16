@@ -53,6 +53,7 @@
     <Compile Include="Character\CreateNewCharacher.cs" />
     <Compile Include="Enemys\Enemy.cs" />
     <Compile Include="Enemys\MurlocEN.cs" />
+    <Compile Include="GameMechanism\Artifact.cs" />
     <Compile Include="GameMechanism\Fight.cs" />
     <Compile Include="Enemys\FireElementalEN.cs" />
     <Compile Include="GameMechanism\GameSaverLoader.cs" />

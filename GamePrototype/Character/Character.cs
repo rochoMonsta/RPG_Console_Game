@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
+using GamePrototype.GameMechanism;
 
 namespace GamePrototype
 {
@@ -21,6 +23,8 @@ namespace GamePrototype
         public CharacterClass CharacterClass;
         [DataMember]
         public Health Health = new Health();
+        //[DataMember]
+        //public List<Artifact> artifacts = new List<Artifact>();
         public Character() { }
         public Character(string Sex, string Name, string Nationality, CharacterClass character)
         {
